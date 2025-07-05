@@ -74,15 +74,15 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/90">
-          <div className="flex flex-wrap justify-center gap-4 mb-4 text-sm">
+          <p>&copy; 2025 Joe Mulligan for Middletown City Council. All Rights Reserved.</p>
+          <p className="mt-2">Paid for by Friends of Joe Mulligan</p>
+          <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm">
             <a href="#" className="hover:text-campaign-yellow transition-colors">Privacy Policy</a>
             <span>•</span>
             <a href="#" className="hover:text-campaign-yellow transition-colors">Accessibility Statement</a>
             <span>•</span>
             <a href="#" className="hover:text-campaign-yellow transition-colors">Sitemap</a>
           </div>
-          <p>&copy; 2025 Joe Mulligan for Middletown City Council. All Rights Reserved.</p>
-          <p className="mt-2">Paid for by Friends of Joe Mulligan</p>
         </div>
       </div>
     </footer>
