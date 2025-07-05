@@ -46,7 +46,7 @@ export default function Experience() {
               <TrendingUp className="text-white" size={32} />
             </div>
             <h3 className="text-2xl font-bold text-campaign-blue mb-4">Economic Growth</h3>
-            <div className="text-campaign-yellow font-bold text-xl mb-2">$1+ Billion Investment</div>
+            <div className="font-bold text-xl mb-2 bg-[#f6f7f8] text-[#27265e] pl-[3px] pr-[3px]">$1+ Billion Investment</div>
             <p className="text-gray-700 text-lg">Led strategic efforts that attracted over $1 billion in new investment to Middletown, creating jobs and opportunities.</p>
           </div>
           
