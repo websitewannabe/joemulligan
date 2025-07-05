@@ -7,7 +7,7 @@ export default function VoteBadge() {
       <img 
         src={voteEarlyImg} 
         alt="Vote Early on November 4th" 
-        className="w-24 h-24 cursor-pointer shadow-lg hover:scale-105 transition-transform duration-200 shake-animation"
+        className="w-24 h-24 cursor-pointer hover:scale-105 transition-transform duration-200 shake-animation"
       />
     </div>
   );
