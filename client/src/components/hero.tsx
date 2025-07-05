@@ -57,7 +57,7 @@ export default function Hero() {
               </Button>
               <Button
                 onClick={() => scrollToSection('priorities')}
-                className="bg-campaign-blue text-white hover:bg-blue-700 text-lg font-bold px-10 py-6 hover-transform rounded-lg w-full sm:w-auto min-w-[200px]"
+                className="hidden sm:block bg-campaign-blue text-white hover:bg-blue-700 text-lg font-bold px-10 py-6 hover-transform rounded-lg w-full sm:w-auto min-w-[200px]"
               >
                 See His Priorities
               </Button>
