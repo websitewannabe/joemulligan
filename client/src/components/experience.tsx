@@ -1,4 +1,4 @@
-import { Gavel, TrendingUp, Construction, Users, Building2, Home } from "lucide-react";
+import { Gavel, TrendingUp, Construction, Users, Building2, MapPin, Home } from "lucide-react";
 import joeCouncilImg from "/assets/Joe_Mulligan_firefighter_cropped.jpg";
 import joeConstructionImg from "/assets/imgi_28_Construction-2048x1689_1751732730505.jpg";
 
