@@ -32,14 +32,13 @@ export default function Hero() {
     >
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-campaign-blue/70"></div>
-      
       {/* Content */}
       <div className="relative z-10 w-full pt-20 mt-[100px] sm:mt-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-white">
             {/* Main Hero Content - Left Justified */}
             <div className="max-w-[600px] text-left"></div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-shadow leading-tight">
+            <h1 className="md:text-6xl lg:text-7xl font-bold text-shadow text-[24px] pl-[0px] pr-[0px] ml-[0px] mr-[0px] pt-[-2px] pb-[-2px] mt-[21px] mb-[21px]">
               <span className="text-campaign-yellow sm:block sm:mb-4">Experienced Leadership </span>
               <span className="text-white">for Middletown!</span>
             </h1>
@@ -65,7 +64,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
       {/* Bottom accent with campaign tagline */}
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-campaign-blue/90 to-transparent p-8">
         <div className="max-w-7xl mx-auto text-center">
