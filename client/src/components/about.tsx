@@ -1,5 +1,5 @@
 import { GraduationCap, Briefcase } from "lucide-react";
-import joeBusinessImg from "/assets/imgi_14_DSC06398-2048x1365_1751732730505.jpg";
+import joeBusinessImg from "/assets/About_Joe_Mulligan.png";
 
 export default function About() {
   return (
