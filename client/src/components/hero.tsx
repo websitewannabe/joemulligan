@@ -32,16 +32,6 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="text-white">
-          {/* Floating Contribute Button - positioned like in reference */}
-          <div className="flex justify-end mb-8">
-            <Button
-              onClick={() => scrollToSection('contact')}
-              className="bg-white text-campaign-blue hover:bg-gray-100 font-bold px-8 py-3 rounded-lg shadow-lg"
-            >
-              GET INVOLVED
-            </Button>
-          </div>
-          
           {/* Main Hero Content - Left Justified */}
           <div className="max-w-4xl text-left">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-shadow leading-tight">
