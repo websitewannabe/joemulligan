@@ -55,7 +55,7 @@ export default function Experience() {
               <Construction className="text-white" size={32} />
             </div>
             <h3 className="text-2xl font-bold text-campaign-blue mb-4">Infrastructure Investment</h3>
-            <div className="text-campaign-yellow font-bold text-xl mb-2">$51 Million Plan</div>
+            <div className="font-bold text-xl mb-2 bg-[#f6f7f8] text-[#27265e] pl-[3px] pr-[3px]">$51 Million Plan</div>
             <p className="text-gray-700 text-lg">Championed comprehensive road repaving covering 200 lane miles and one-third of all city streets.</p>
           </div>
         </div>
