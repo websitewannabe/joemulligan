@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook } from "lucide-react";
 import logoImg from "/assets/Joe_mulligan_for_middletown_City_council_logo_1751735108116.png";
 
 export default function Footer() {
@@ -55,19 +55,13 @@ export default function Footer() {
             <div className="space-y-2 text-white/90">
               <p>1054 N University Blvd</p>
               <p>Middletown, OH 45042</p>
-              <p>(513) 422-4638</p>
-              <p>joe@joemulligan.com</p>
+              <a href="tel:+15134224638" className="block hover:text-campaign-yellow transition-colors">(513) 422-4638</a>
+              <a href="mailto:joe@joemulligan.com" className="block hover:text-campaign-yellow transition-colors">joe@joemulligan.com</a>
             </div>
             
             <div className="flex space-x-4 mt-4">
-              <a href="https://www.facebook.com/VoteMulligan" className="w-10 h-10 bg-campaign-blue/50 rounded-lg flex items-center justify-center hover:bg-campaign-blue/70 transition-colors">
+              <a href="https://www.facebook.com/VoteMulligan" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-campaign-blue/50 rounded-lg flex items-center justify-center hover:bg-campaign-blue/70 transition-colors">
                 <Facebook className="text-white" size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-campaign-blue/50 rounded-lg flex items-center justify-center hover:bg-campaign-blue/70 transition-colors">
-                <Twitter className="text-white" size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-campaign-blue/50 rounded-lg flex items-center justify-center hover:bg-campaign-blue/70 transition-colors">
-                <Linkedin className="text-white" size={20} />
               </a>
             </div>
           </div>
