@@ -79,7 +79,7 @@ export default function Navigation() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 hover:text-campaign-blue"
             >
-              {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
+              {isMenuOpen ? <X size={51} /> : <Menu size={51} />}
             </Button>
           </div>
         </div>
@@ -103,6 +103,9 @@ export default function Navigation() {
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-white hover:text-campaign-yellow block px-3 py-2 text-base font-medium w-full text-left">
               Get Involved
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="text-white hover:text-campaign-yellow block px-3 py-2 text-base font-medium w-full text-left">
+              Contact Us
             </button>
           </div>
         </div>
