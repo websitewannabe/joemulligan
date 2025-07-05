@@ -214,14 +214,6 @@ export default function ContactForm() {
               </div>
             </div>
             
-            <div>
-              <img
-                src={joeVolunteerImg}
-                alt="Joe Mulligan with volunteers"
-                className="w-full rounded-lg shadow-lg mb-6"
-              />
-            </div>
-            
             <div className="text-center">
               <p className="text-lg mb-4">Ready to get involved?</p>
               <Button
