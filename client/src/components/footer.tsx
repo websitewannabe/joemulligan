@@ -22,6 +22,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <img
+              src="/assets/Joe_Mulligan_headshot.jpg"
+              alt="Joe Mulligan Headshot"
+              className="w-24 h-24 rounded-full object-cover mb-4 mx-auto md:mx-0"
+            />
+            <img
               src={logoImg}
               alt="Joe Mulligan for Middletown City Council"
               className="h-20 w-auto mb-4 cursor-pointer"
