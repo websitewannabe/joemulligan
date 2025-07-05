@@ -69,7 +69,7 @@ export default function Hero() {
       {/* Bottom accent with campaign tagline */}
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-campaign-blue/90 to-transparent p-8">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-campaign-yellow text-lg md:text-xl font-semibold">
+          <p className="hidden sm:block text-campaign-yellow text-lg md:text-xl font-semibold">
             "Ready to win the fight for Middletown's future"
           </p>
         </div>
