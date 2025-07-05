@@ -1,4 +1,4 @@
-import { Facebook } from "lucide-react";
+import { Facebook, Eye } from "lucide-react";
 import logoImg from "/assets/Joe_mulligan_for_middletown_City_council_logo_1751735108116.png";
 
 export default function Footer() {
@@ -46,6 +46,18 @@ export default function Footer() {
               </button>
               <button onClick={() => scrollToSection('leadership')} className="block text-white/90 hover:text-campaign-yellow transition-colors text-left">
                 Leadership
+              </button>
+              <button 
+                onClick={() => {
+                  // Trigger EqualWeb accessibility tools
+                  if (window.interdeal && window.interdeal.loadAccessibility) {
+                    window.interdeal.loadAccessibility();
+                  }
+                }} 
+                className="flex items-center gap-2 text-white/90 hover:text-campaign-yellow transition-colors text-left"
+              >
+                <Eye size={16} />
+                Accessibility Tools
               </button>
             </div>
           </div>
