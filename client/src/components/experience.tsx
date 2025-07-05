@@ -1,4 +1,4 @@
-import { Gavel, TrendingUp, Construction, Users, Building2, MapPin } from "lucide-react";
+import { Gavel, TrendingUp, Construction, Users, Building2, Home } from "lucide-react";
 import joeCouncilImg from "/assets/Joe_Mulligan_firefighter_cropped.jpg";
 import joeConstructionImg from "/assets/imgi_28_Construction-2048x1689_1751732730505.jpg";
 
@@ -63,7 +63,7 @@ export default function Experience() {
         <div className="bg-campaign-blue text-white p-12 rounded-2xl">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <Users className="text-campaign-yellow mx-auto mb-4" size={48} />
+              <Home className="text-campaign-yellow mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold mb-2">300+</div>
               <div className="text-xl">Blighted Homes Demolished</div>
               <p className="text-white/90 mt-2">Partnered with Butler County Land Bank to stabilize neighborhoods</p>
