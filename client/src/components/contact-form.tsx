@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, MapPin, Share2, Mail, Phone, MapPin as MapPinIcon } from "lucide-react";
+import { Heart, MapPin, Share2, Mail, Phone, MapPin as MapPinIcon, DollarSign } from "lucide-react";
 import joeVolunteerImg from "/assets/imgi_18_IMG_1628-1536x2048_1751732730505.jpg";
 
 export default function ContactForm() {
@@ -209,6 +209,15 @@ export default function ContactForm() {
                   <div>
                     <h4 className="font-bold">Spread the Word</h4>
                     <p className="text-white/90">Share with friends and family</p>
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-campaign-yellow rounded-lg flex items-center justify-center mr-4">
+                    <DollarSign className="text-campaign-blue" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold">Donate</h4>
+                    <p className="text-white/90">Support our campaign with a contribution</p>
                   </div>
                 </div>
               </div>
