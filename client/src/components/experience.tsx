@@ -1,4 +1,4 @@
-import { Gavel, TrendingUp, Construction, Users, Building2, MapPin, Home } from "lucide-react";
+import { Gavel, TrendingUp, Construction, Building2, Home } from "lucide-react";
 import joeCouncilImg from "/assets/Joe_Mulligan_firefighter_cropped.jpg";
 import joeConstructionImg from "/assets/imgi_28_Construction-2048x1689_1751732730505.jpg";
 
@@ -76,7 +76,7 @@ export default function Experience() {
             </div>
             <div>
               <img 
-                src="/assets/noun-road-7933758-F9DC05.svg" 
+                src="/assets/noun-road-3554996-F9DC05.svg" 
                 alt="Road icon" 
                 className="w-12 h-12 mx-auto mb-4 filter brightness-0 invert"
                 style={{ filter: 'brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(370%) hue-rotate(4deg) brightness(106%) contrast(101%)' }}
