@@ -24,7 +24,8 @@ export default function Footer() {
             <img
               src={logoImg}
               alt="Joe Mulligan for Middletown City Council"
-              className="h-20 w-auto mb-4"
+              className="h-20 w-auto mb-4 cursor-pointer"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
             <p className="text-white/90 text-lg">
               Experienced Leadership for Middletown!

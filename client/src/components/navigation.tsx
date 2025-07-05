@@ -42,7 +42,8 @@ export default function Navigation() {
             <img
               src={logoImg}
               alt="Joe Mulligan for Middletown City Council"
-              className="h-16 w-auto"
+              className="h-16 w-auto cursor-pointer"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
           </div>
           
