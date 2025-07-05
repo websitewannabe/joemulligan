@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import joeBackgroundImg from "/assets/Joe_Mulligan_PS_hero_image_right_crop_1751736695332.jpg";
-import joeMobileBackgroundImg from "/assets/Joe_Mulligan_Mobile_hero_image.jpg";
+import joeMobileBackgroundImg from "/assets/Joe_Mulligan_Mobile_hero_image_expanded.jpg";
 
 export default function Hero() {
   const isMobile = useIsMobile();
