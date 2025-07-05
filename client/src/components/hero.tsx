@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import joeBackgroundImg from "@assets/imgi_14_DSC06398-2048x1365_1751732730505.jpg";
+import joeBackgroundImg from "@/assets/imgi_14_DSC06398-2048x1365_1751732730505.jpg";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
