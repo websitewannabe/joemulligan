@@ -1,4 +1,4 @@
-import { Gavel, TrendingUp, Construction, Users, Building2, MapPin } from "lucide-react";
+import { Gavel, TrendingUp, Construction, Users, Building2 } from "lucide-react";
 import joeCouncilImg from "/assets/Joe_Mulligan_firefighter_cropped.jpg";
 import joeConstructionImg from "/assets/imgi_28_Construction-2048x1689_1751732730505.jpg";
 
@@ -75,7 +75,7 @@ export default function Experience() {
               <p className="text-white/90 mt-2">Elected twice by fellow council members to leadership role</p>
             </div>
             <div>
-              <MapPin className="text-campaign-yellow mx-auto mb-4" size={48} />
+              <Construction className="text-campaign-yellow mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold mb-2">200</div>
               <div className="text-xl">Lane Miles Improved</div>
               <p className="text-white/90 mt-2">Major infrastructure investment approved by taxpayers</p>
