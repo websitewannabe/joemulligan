@@ -77,9 +77,9 @@ export default function Navigation() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-campaign-yellow"
+              className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 hover:text-campaign-blue"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
             </Button>
           </div>
         </div>
