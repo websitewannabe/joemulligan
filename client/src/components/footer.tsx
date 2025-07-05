@@ -87,7 +87,7 @@ export default function Footer() {
             <span>•</span>
             <a href="/accessibility-statement" className="hover:text-campaign-yellow transition-colors">Accessibility Statement</a>
             <span>•</span>
-            <a href="#" className="hover:text-campaign-yellow transition-colors">Sitemap</a>
+            <a href="/sitemap" className="hover:text-campaign-yellow transition-colors">Sitemap</a>
           </div>
         </div>
       </div>

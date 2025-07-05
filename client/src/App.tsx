@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import VoteBadge from "./components/vote-badge";
 import Home from "@/pages/home";
 import AccessibilityStatement from "@/pages/accessibility-statement";
+import Sitemap from "@/pages/sitemap";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -12,6 +13,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/accessibility-statement" component={AccessibilityStatement} />
+      <Route path="/sitemap" component={Sitemap} />
       <Route component={NotFound} />
     </Switch>
   );
