@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImg from "@assets/Joe_Mulligan_logo_1751732171803.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -22,7 +32,9 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-campaign-blue/90 backdrop-blur-md shadow-xl">
+    <nav className={`fixed w-full top-0 z-50 shadow-xl transition-all duration-300 ease-in-out ${
+      isScrolled ? 'bg-campaign-blue' : 'bg-campaign-blue/90'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
