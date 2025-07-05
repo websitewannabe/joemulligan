@@ -76,9 +76,10 @@ export default function Footer() {
               <a href="mailto:joe@joemulligan.com" className="block hover:text-campaign-yellow transition-colors">joe@joemulligan.com</a>
             </div>
             
-            <div className="flex space-x-4 mt-4">
-              <a href="https://www.facebook.com/VoteMulligan" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-campaign-blue/50 rounded-lg flex items-center justify-center hover:bg-campaign-blue/70 transition-colors">
+            <div className="flex items-center space-x-4 mt-4">
+              <a href="https://www.facebook.com/VoteMulligan" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-campaign-blue/50 rounded-lg px-3 py-2 hover:bg-campaign-blue/70 transition-colors">
                 <Facebook className="text-white" size={20} />
+                <span className="text-white">Facebook</span>
               </a>
             </div>
           </div>
