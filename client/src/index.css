@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(241, 43%, 26%);
+  --primary-foreground: hsl(60, 90%, 98%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  --campaign-blue: hsl(241, 43%, 26%);
+  --campaign-yellow: hsl(53, 95%, 50%);
+  --campaign-light: hsl(216, 17%, 97%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(241, 43%, 26%);
+  --primary-foreground: hsl(60, 90%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  --campaign-blue: hsl(241, 43%, 26%);
+  --campaign-yellow: hsl(53, 95%, 50%);
+  --campaign-light: hsl(216, 17%, 97%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-campaign-blue {
+    color: hsl(241, 43%, 26%);
+  }
+  
+  .bg-campaign-blue {
+    background-color: hsl(241, 43%, 26%);
+  }
+  
+  .text-campaign-yellow {
+    color: hsl(53, 95%, 50%);
+  }
+  
+  .bg-campaign-yellow {
+    background-color: hsl(53, 95%, 50%);
+  }
+  
+  .bg-campaign-light {
+    background-color: hsl(216, 17%, 97%);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(241, 43%, 26%) 0%, hsl(241, 43%, 20%) 100%);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .hover-transform {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-transform:hover {
+    transform: translateY(-2px);
+  }
+  
+  .section-padding {
+    padding: 4rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .section-padding {
+      padding: 2rem 0;
+    }
+  }
+}
