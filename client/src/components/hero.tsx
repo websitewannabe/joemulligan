@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-campaign-blue/70"></div>
       
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="text-white">
           {/* Floating Contribute Button - positioned like in reference */}
           <div className="flex justify-end mb-8">
@@ -42,8 +42,8 @@ export default function Hero() {
             </Button>
           </div>
           
-          {/* Main Hero Content */}
-          <div className="max-w-3xl mx-auto">
+          {/* Main Hero Content - Left Justified */}
+          <div className="max-w-4xl text-left">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-shadow leading-tight">
               <span className="text-campaign-yellow block mb-4">Experienced Leadership</span>
               <span className="text-white">for Middletown!</span>
@@ -53,7 +53,7 @@ export default function Hero() {
               Small Business Owner • Attorney At Law • Community Leader • Fighter for Better Government
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
               <Button
                 onClick={() => scrollToSection('about')}
                 className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 text-lg font-bold px-10 py-6 hover-transform rounded-lg shadow-lg"
