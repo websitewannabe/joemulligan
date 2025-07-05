@@ -33,7 +33,7 @@ export default function Hero() {
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-campaign-blue/70"></div>
       {/* Content */}
-      <div className="relative z-10 w-full pt-20 mt-[200px] sm:mt-0">
+      <div className="relative z-10 w-full pt-20 mt-[120px] sm:mt-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-white">
             {/* Main Hero Content - Left Justified */}
