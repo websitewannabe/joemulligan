@@ -214,16 +214,6 @@ export default function ContactForm() {
               </div>
             </div>
             
-            <div className="text-center">
-              <p className="text-lg mb-4">Ready to get involved?</p>
-              <Button
-                onClick={() => window.location.href = "mailto:joe@joemulligan.com"}
-                className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 text-lg px-8 py-3 hover-transform"
-              >
-                Email Joe Now
-              </Button>
-            </div>
-            
             <div className="space-y-4">
               <h4 className="text-lg font-bold">Contact Information</h4>
               <div className="flex items-center">
