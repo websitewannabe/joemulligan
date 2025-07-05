@@ -19,14 +19,14 @@ export default function Experience() {
             <img
               src={joeCouncilImg}
               alt="Joe Mulligan in Council Chamber"
-              className="w-full rounded-2xl shadow-2xl"
+              className="w-full h-80 object-cover rounded-2xl shadow-2xl"
             />
           </div>
           <div>
             <img
               src={joeConstructionImg}
               alt="Joe Mulligan at Construction Site"
-              className="w-full rounded-2xl shadow-2xl"
+              className="w-full h-80 object-cover rounded-2xl shadow-2xl"
             />
           </div>
         </div>
