@@ -40,7 +40,7 @@ export default function Hero() {
             {/* Main Hero Content - Left Justified */}
             <div className="max-w-[600px] text-left"></div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-shadow leading-tight">
-              <span className="text-campaign-yellow block mb-4">Experienced Leadership</span>
+              <span className="text-campaign-yellow sm:block sm:mb-4">Experienced Leadership </span>
               <span className="text-white">for Middletown!</span>
             </h1>
             
