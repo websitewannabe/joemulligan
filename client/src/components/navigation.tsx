@@ -49,7 +49,7 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4 text-[18px] font-semibold">
+            <div className="ml-10 flex items-baseline space-x-4 font-semibold text-[23px]">
               <button onClick={() => scrollToSection('about')} className="text-white hover:text-campaign-yellow px-3 py-2 text-sm font-medium transition-colors">
                 About
               </button>
