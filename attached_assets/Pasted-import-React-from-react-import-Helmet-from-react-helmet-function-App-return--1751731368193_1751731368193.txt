@@ -1,0 +1,130 @@
+import React from 'react';
+import { Helmet } from 'react-helmet';
+
+function App() {
+  return (
+    <>
+      <Helmet>
+        <link rel="canonical" href="https://joemulligan.com" />
+        <title>Joe Mulligan for Middletown City Council | Experienced Leadership</title>
+        <meta name="description" content="Joe Mulligan brings trusted leadership and experience to Middletown City Council. Learn more about his background, priorities, and how to get involved." />
+        <meta name="keywords" content="Joe Mulligan, Middletown OH, City Council, local election, community leader, public service" />
+        <meta property="og:title" content="Joe Mulligan for Middletown City Council" />
+        <meta property="og:description" content="Experienced leadership ready to serve Middletown, Ohio. Discover Joe’s accomplishments and vision." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://joemulligan.com" />
+        <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Joe+Mulligan+for+City+Council" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Joe Mulligan for Middletown City Council",
+            url: "https://joemulligan.com",
+            image: "https://via.placeholder.com/1200x630.png",
+            logo: "https://via.placeholder.com/200x200.png",
+            description: "Joe Mulligan brings trusted leadership to Middletown, OH through decades of public service, legal expertise, and community commitment.",
+            telephone: "+1-513-422-4638",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "1054 N University Blvd",
+              addressLocality: "Middletown",
+              addressRegion: "OH",
+              postalCode: "45042",
+              addressCountry: "US"
+            }
+          })}
+        </script>
+      </Helmet>
+
+      <main className="font-sans text-gray-800">
+        {/* Navigation */}
+        <nav className="sticky top-0 bg-white shadow-md z-50">
+          <ul className="flex justify-around p-4 font-semibold text-blue-800">
+            <li><a href="#about">About</a></li>
+            <li><a href="#priorities">Priorities</a></li>
+            <li><a href="#experience">Public Service</a></li>
+            <li><a href="#leadership">Community</a></li>
+            <li><a href="#involved">Get Involved</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        {/* Hero Section */}
+        <section className="text-center bg-blue-900 text-white p-16" id="hero">
+          <h1 className="text-4xl font-bold mb-2">Joe Mulligan for Middletown City Council</h1>
+          <p className="text-lg mb-4">Experienced Leadership for Middletown!</p>
+          <img src="https://via.placeholder.com/600x400.png?text=Joe+Mulligan" alt="Joe Mulligan" className="mx-auto rounded-lg shadow-lg" />
+        </section>
+
+        {/* About */}
+        <section id="about" className="p-8 bg-gray-50">
+          <h2 className="text-2xl font-bold mb-4 text-blue-900">About Joe</h2>
+          <p className="mb-4">
+            Joe Mulligan is a practicing attorney and experienced leader with a deep commitment to the Middletown community.
+          </p>
+          <p className="font-semibold">Education</p>
+          <ul className="list-disc ml-6 mb-4">
+            <li>University of Dayton School of Law, JD, magna cum laude, Top 3%</li>
+            <li>University of Notre Dame, BBA, cum laude</li>
+          </ul>
+          <p className="font-semibold">Employment</p>
+          <ul className="list-disc ml-6">
+            <li>Singer & McCausland Co., LPA – Estate Planning, Probate, Elder Law</li>
+            <li>Kaup Mulligan Law Group – Managing Attorney for collections and real estate</li>
+            <li>Former Media Sales Manager – Columbus, Pittsburgh, Dayton</li>
+          </ul>
+        </section>
+
+        {/* Priorities */}
+        <section id="priorities" className="p-8">
+          <h2 className="text-2xl font-bold mb-4 text-blue-900">Priorities</h2>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>Fiscally responsible budgeting & deficit control</li>
+            <li>Stimulating economic development & jobs</li>
+            <li>Neighborhood revitalization & housing stability</li>
+            <li>Public safety investment for Fire & Police</li>
+            <li>Infrastructure & roads repaving ($51M plan)</li>
+            <li>Parks and recreation improvements</li>
+            <li>Support for first responders & new fire stations</li>
+          </ul>
+        </section>
+
+        {/* Public Service */}
+        <section id="experience" className="p-8 bg-gray-50">
+          <h2 className="text-2xl font-bold mb-4 text-blue-900">Public Service Experience</h2>
+          <p>
+            Joe has served as a Middletown City Council Member from 2012–2015 and 2018–2021, twice as Vice Mayor. His leadership has helped drive more than $1 billion in investment and transformative local policy.
+          </p>
+        </section>
+
+        {/* Community Involvement */}
+        <section id="leadership" className="p-8">
+          <h2 className="text-2xl font-bold mb-4 text-blue-900">Community Service & Leadership</h2>
+          <ul className="list-disc ml-6 space-y-1">
+            <li>Hospice Care of Middletown – Board Member</li>
+            <li>Middletown Rotary Club</li>
+            <li>YMCA, Performing Arts, Whopla Boards</li>
+            <li>Volunteer of the Year – YMCA, Middletown Foundation</li>
+          </ul>
+        </section>
+
+        {/* Get Involved */}
+        <section id="involved" className="p-8 bg-gray-50">
+          <h2 className="text-2xl font-bold mb-4 text-blue-900">Get Involved</h2>
+          <p>Email <a href="mailto:joe@joemulligan.com" className="text-blue-700 underline">joe@joemulligan.com</a> to volunteer, donate, or show support.</p>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="p-8">
+          <h2 className="text-2xl font-bold mb-4 text-blue-900">Contact</h2>
+          <p>Email: <a href="mailto:joe@joemulligan.com" className="text-blue-700 underline">joe@joemulligan.com</a></p>
+          <p>Phone: <a href="tel:+15134224638" className="text-blue-700 underline">(513) 422-4638</a></p>
+          <p>Address: 1054 N University Blvd, Middletown, OH 45042</p>
+          <p>Facebook: <a href="https://www.facebook.com/VoteMulligan" className="text-blue-700 underline">VoteMulligan</a></p>
+        </section>
+      </main>
+    </>
+  );
+}
+
+export default App;
