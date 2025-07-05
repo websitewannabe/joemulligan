@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 import joeBackgroundImg from "/assets/Joe_Mulligan_PS_hero_image_right_crop_1751736695332.jpg";
 import joeMobileBackgroundImg from "/assets/Joe_Mulligan_Mobile_hero_image.jpg";
 
 export default function Hero() {
+  const isMobile = useIsMobile();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -21,7 +24,7 @@ export default function Hero() {
     <section 
       className="relative min-h-screen flex items-center justify-center"
       style={{
-        backgroundImage: `url(${window.innerWidth <= 768 ? joeMobileBackgroundImg : joeBackgroundImg})`,
+        backgroundImage: `url(${isMobile ? joeMobileBackgroundImg : joeBackgroundImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
