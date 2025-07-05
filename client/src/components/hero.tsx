@@ -47,14 +47,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <Button
                 onClick={() => scrollToSection('about')}
-                className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 text-lg font-bold px-10 py-6 hover-transform rounded-lg shadow-lg"
+                className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 text-lg font-bold px-10 py-6 hover-transform rounded-lg shadow-lg w-full sm:w-auto min-w-[200px]"
               >
                 Learn About Joe
               </Button>
               <Button
                 onClick={() => scrollToSection('priorities')}
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-campaign-blue text-lg font-bold px-10 py-6 hover-transform rounded-lg"
+                className="border-2 border-white text-white hover:bg-white hover:text-campaign-blue text-lg font-bold px-10 py-6 hover-transform rounded-lg w-full sm:w-auto min-w-[200px] bg-transparent"
               >
                 See His Priorities
               </Button>
