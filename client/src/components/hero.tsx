@@ -33,7 +33,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="text-white">
           {/* Main Hero Content - Left Justified */}
-          <div className="max-w-4xl text-left">
+          <div className="max-w-[600px] text-left">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-shadow leading-tight">
               <span className="text-campaign-yellow block mb-4">Experienced Leadership</span>
               <span className="text-white">for Middletown!</span>
