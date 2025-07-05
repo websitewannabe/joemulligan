@@ -1,4 +1,4 @@
-import { Gavel, TrendingUp, Construction, Building2, Home, Road } from "lucide-react";
+import { Gavel, TrendingUp, Construction, Building2, Home } from "lucide-react";
 import joeCouncilImg from "/assets/Joe_Mulligan_firefighter_cropped.jpg";
 import joeConstructionImg from "/assets/imgi_28_Construction-2048x1689_1751732730505.jpg";
 
@@ -75,7 +75,12 @@ export default function Experience() {
               <p className="text-white/90 mt-2">Elected twice by fellow council members to leadership role</p>
             </div>
             <div>
-              <Road className="text-campaign-yellow mx-auto mb-4" size={48} />
+              <img 
+                src="/assets/noun-road-7933758-F9DC05.svg" 
+                alt="Road icon" 
+                className="w-12 h-12 mx-auto mb-4"
+                style={{ filter: 'brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(370%) hue-rotate(4deg) brightness(106%) contrast(101%)' }}
+              />
               <div className="text-3xl font-bold mb-2">200</div>
               <div className="text-xl">Lane Miles Improved</div>
               <p className="text-white/90 mt-2">Major infrastructure investment approved by taxpayers</p>
