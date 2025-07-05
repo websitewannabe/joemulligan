@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Joe Mulligan for City Council</title>
+</head>
+<body>
+    <!-- Hidden form for Netlify to detect -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <select name="interest">
+            <option value="">Select how you'd like to help</option>
+            <option value="yard-sign">Request a yard sign</option>
+            <option value="volunteer">Volunteer for the campaign</option>
+            <option value="meet-greet">Host a meet & greet</option>
+            <option value="donate">Donate $</option>
+        </select>
+        <textarea name="message"></textarea>
+        <input type="checkbox" name="wantYardSign" />
+        <input type="checkbox" name="wantToVolunteer" />
+        <input type="checkbox" name="wantToHostMeetGreet" />
+    </form>
+</body>
+</html>

@@ -26,11 +26,35 @@ export default function ContactForm() {
 
   const { toast } = useToast();
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: typeof formData) => {
-      return await apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.name || !formData.email) {
+      toast({
+        title: "Required fields missing",
+        description: "Please fill in your name and email address.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    // Create form data for Netlify submission
+    const netlifyForm = new FormData();
+    netlifyForm.append("form-name", "contact");
+    netlifyForm.append("name", formData.name);
+    netlifyForm.append("email", formData.email);
+    netlifyForm.append("phone", formData.phone);
+    netlifyForm.append("message", formData.message);
+    netlifyForm.append("interest", formData.interest);
+    netlifyForm.append("wantYardSign", formData.wantYardSign.toString());
+    netlifyForm.append("wantToVolunteer", formData.wantToVolunteer.toString());
+    netlifyForm.append("wantToHostMeetGreet", formData.wantToHostMeetGreet.toString());
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(netlifyForm as any).toString()
+    })
+    .then(() => {
       toast({
         title: "Message sent successfully!",
         description: "Thank you for your interest. We'll get back to you soon.",
@@ -45,27 +69,14 @@ export default function ContactForm() {
         wantToVolunteer: false,
         wantToHostMeetGreet: false
       });
-    },
-    onError: (error) => {
+    })
+    .catch(() => {
       toast({
         title: "Error sending message",
         description: "Please try again later.",
         variant: "destructive"
       });
-    }
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email) {
-      toast({
-        title: "Required fields missing",
-        description: "Please fill in your name and email address.",
-        variant: "destructive"
-      });
-      return;
-    }
-    contactMutation.mutate(formData);
+    });
   };
 
   const handleInputChange = (field: keyof typeof formData, value: string | boolean) => {
@@ -91,7 +102,13 @@ export default function ContactForm() {
               <CardTitle className="text-2xl font-bold text-campaign-blue">Send Us a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact" />
+                <div style={{ display: "none" }}>
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                  </label>
+                </div>
                 <div>
                   <Label htmlFor="name" className="text-sm font-medium text-gray-700">Name *</Label>
                   <Input
@@ -159,10 +176,9 @@ export default function ContactForm() {
                 
                 <Button
                   type="submit"
-                  disabled={contactMutation.isPending}
                   className="w-full bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 text-lg py-6"
                 >
-                  {contactMutation.isPending ? "Sending..." : "Send Message"}
+                  Send Message
                 </Button>
               </form>
             </CardContent>
