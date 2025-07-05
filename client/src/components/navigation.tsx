@@ -49,7 +49,7 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-4 text-[18px] font-semibold">
               <button onClick={() => scrollToSection('about')} className="text-white hover:text-campaign-yellow px-3 py-2 text-sm font-medium transition-colors">
                 About
               </button>
@@ -84,7 +84,6 @@ export default function Navigation() {
           </div>
         </div>
       </div>
-      
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-campaign-blue">
