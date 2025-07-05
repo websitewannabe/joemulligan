@@ -37,7 +37,7 @@ export default function Experience() {
               <Gavel className="text-white" size={32} />
             </div>
             <h3 className="text-2xl font-bold text-campaign-blue mb-4">City Council Leadership</h3>
-            <div className="text-campaign-yellow font-bold text-xl mb-2">2012-2015 & 2018-2021</div>
+            <div className="font-bold text-xl mb-2 bg-[#f6f7f8] text-[#27265e] pl-[3px] pr-[3px]">2012-2015 & 2018-2021</div>
             <p className="text-gray-700 text-lg">Twice elected as Vice Mayor, leading key initiatives for fiscal responsibility and community development across multiple terms.</p>
           </div>
           
