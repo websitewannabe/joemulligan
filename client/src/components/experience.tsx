@@ -76,10 +76,9 @@ export default function Experience() {
             </div>
             <div>
               <img 
-                src="/assets/noun-road-7933758-F9DC05.svg" 
+                src="/assets/noun-road-6113270-F9DC05.png" 
                 alt="Road icon" 
                 className="w-12 h-12 mx-auto mb-4"
-                style={{ filter: 'brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(370%) hue-rotate(4deg) brightness(106%) contrast(101%)' }}
               />
               <div className="text-3xl font-bold mb-2">200</div>
               <div className="text-xl">Lane Miles Improved</div>
