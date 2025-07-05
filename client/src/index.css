@@ -130,3 +130,13 @@
     }
   }
 }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-2px) rotate(-1deg); }
+  75% { transform: translateX(2px) rotate(1deg); }
+}
+
+.shake-animation {
+  animation: shake 2s ease-in-out infinite;
+}
