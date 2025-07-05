@@ -98,7 +98,16 @@ This is a full-stack web application built for Joe Mulligan's campaign for Middl
 
 ```
 Changelog:
-- July 05, 2025. Initial setup
+- July 05, 2025. Initial setup with basic campaign structure
+- July 05, 2025. Enhanced design inspired by nikemaforcongress.com:
+  * Updated hero section with full-screen layout and circular profile image
+  * Redesigned About section with enhanced visual hierarchy
+  * Improved Experience section with statistics and dual-column images
+  * Added campaign logo to navigation and footer
+  * Enhanced typography and color scheme consistency
+  * Added comprehensive SEO meta tags and structured data
+  * Created netlify.toml for deployment configuration
+  * Fixed TypeScript issues in storage layer
 ```
 
 ## User Preferences

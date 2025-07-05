@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImg from "@assets/Joe_Mulligan_logo_1751732171803.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +27,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="text-campaign-yellow">
-              <div className="text-2xl font-bold">Joe Mulligan</div>
-              <div className="text-xs font-semibold">for Middletown City Council</div>
-            </div>
+            <img
+              src={logoImg}
+              alt="Joe Mulligan for Middletown City Council"
+              className="h-16 w-auto"
+            />
           </div>
           
           {/* Desktop Navigation */}

@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import logoImg from "@assets/Joe_Mulligan_logo_1751732171803.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -20,11 +21,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <div className="text-campaign-yellow mb-4">
-              <div className="text-2xl font-bold">Joe Mulligan</div>
-              <div className="text-sm font-semibold">for Middletown City Council</div>
-            </div>
-            <p className="text-white/90">
+            <img
+              src={logoImg}
+              alt="Joe Mulligan for Middletown City Council"
+              className="h-20 w-auto mb-4"
+            />
+            <p className="text-white/90 text-lg">
               Experienced Leadership for Middletown!
             </p>
           </div>
