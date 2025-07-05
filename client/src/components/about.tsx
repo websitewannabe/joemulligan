@@ -20,7 +20,7 @@ export default function About() {
             <img
               src={joeBusinessImg}
               alt="Joe Mulligan Professional Business Photo"
-              className="w-full rounded-2xl shadow-2xl"
+              className="w-full rounded-2xl"
             />
             <div className="absolute -bottom-6 -right-6 bg-campaign-yellow p-6 rounded-xl shadow-xl transform rotate-3">
               <div className="text-campaign-blue font-bold text-center">
