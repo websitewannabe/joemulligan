@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import joeProfileImg from "@assets/imgi_14_DSC06398-2048x1365_1751732730505.jpg";
+import joeBackgroundImg from "@assets/imgi_14_DSC06398-2048x1365_1751732730505.jpg";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -17,52 +17,67 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero-gradient pt-20 pb-16 md:pb-24 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-white order-2 md:order-1">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow leading-tight">
-              <span className="text-campaign-yellow">Joe Mulligan</span>
-              <br />
-              <span className="text-3xl md:text-4xl">for Middletown City Council</span>
+    <section 
+      className="relative min-h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: `url(${joeBackgroundImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-campaign-blue/70"></div>
+      
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="text-white">
+          {/* Floating Contribute Button - positioned like in reference */}
+          <div className="flex justify-end mb-8">
+            <Button
+              onClick={() => scrollToSection('contact')}
+              className="bg-white text-campaign-blue hover:bg-gray-100 font-bold px-8 py-3 rounded-lg shadow-lg"
+            >
+              GET INVOLVED
+            </Button>
+          </div>
+          
+          {/* Main Hero Content */}
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-shadow leading-tight">
+              <span className="text-campaign-yellow block mb-4">Experienced Leadership</span>
+              <span className="text-white">for Middletown!</span>
             </h1>
-            <p className="text-2xl md:text-3xl mb-4 text-shadow font-medium">
-              Experienced Leadership for Middletown!
-            </p>
-            <p className="text-lg md:text-xl mb-8 text-white/90 max-w-lg">
+            
+            <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-shadow font-medium leading-relaxed">
               Small Business Owner • Attorney At Law • Community Leader • Fighter for Better Government
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={() => scrollToSection('contact')}
-                className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 text-xl font-bold px-12 py-8 hover-transform rounded-lg"
-              >
-                Get Involved
-              </Button>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button
                 onClick={() => scrollToSection('about')}
-                variant="outline"
-                className="border-3 border-campaign-yellow text-campaign-yellow hover:bg-campaign-yellow hover:text-campaign-blue text-xl font-bold px-12 py-8 hover-transform rounded-lg"
+                className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 text-lg font-bold px-10 py-6 hover-transform rounded-lg shadow-lg"
               >
-                Learn More
+                Learn About Joe
+              </Button>
+              <Button
+                onClick={() => scrollToSection('priorities')}
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-campaign-blue text-lg font-bold px-10 py-6 hover-transform rounded-lg"
+              >
+                See His Priorities
               </Button>
             </div>
           </div>
-          <div className="relative order-1 md:order-2">
-            <div className="relative">
-              <img
-                src={joeProfileImg}
-                alt="Joe Mulligan Professional Photo"
-                className="w-full max-w-lg mx-auto rounded-full shadow-2xl border-8 border-campaign-yellow"
-              />
-              <div className="absolute -bottom-8 -right-8 bg-campaign-yellow p-6 rounded-lg shadow-lg transform rotate-3">
-                <div className="text-campaign-blue font-bold text-center">
-                  <div className="text-3xl">2025</div>
-                  <div className="text-lg">VOTE</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
+      
+      {/* Bottom accent with campaign tagline */}
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-campaign-blue/90 to-transparent p-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-campaign-yellow text-lg md:text-xl font-semibold">
+            "Ready to win the fight for Middletown's future"
+          </p>
         </div>
       </div>
     </section>

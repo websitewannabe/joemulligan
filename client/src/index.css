@@ -114,4 +114,19 @@
       padding: 2rem 0;
     }
   }
+  
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .hero-background {
+    background-attachment: fixed;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-background {
+      background-attachment: scroll;
+    }
+  }
 }
