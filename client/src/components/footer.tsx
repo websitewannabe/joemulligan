@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
-import logoImg from "@/assets/joe_mulligan_new_logo.png";
+import logoImg from "/assets/Joe_mulligan_for_middletown_City_council_logo_1751735108116.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {

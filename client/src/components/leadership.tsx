@@ -1,5 +1,5 @@
 import { Check, Award, Users } from "lucide-react";
-import joeCommunityImg from "@assets/imgi_23_Liz_Kelly_Photos_007-2048x1539_1751732730505.jpg";
+import joeCommunityImg from "/assets/imgi_23_Liz_Kelly_Photos_007-2048x1539_1751732730505.jpg";
 
 export default function Leadership() {
   const boardPositions = [

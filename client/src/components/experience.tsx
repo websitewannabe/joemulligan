@@ -1,6 +1,6 @@
 import { Gavel, TrendingUp, Construction, Users, Building2, MapPin } from "lucide-react";
-import joeCouncilImg from "@assets/imgi_10_5_1751732730504.jpg";
-import joeConstructionImg from "@assets/imgi_28_Construction-2048x1689_1751732730505.jpg";
+import joeCouncilImg from "/assets/imgi_10_5_1751732730504.jpg";
+import joeConstructionImg from "/assets/imgi_28_Construction-2048x1689_1751732730505.jpg";
 
 export default function Experience() {
   return (

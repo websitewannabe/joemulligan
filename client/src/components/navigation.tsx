@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImg from "@/assets/joe_mulligan_new_logo.png";
+import logoImg from "/assets/Joe_mulligan_for_middletown_City_council_logo_1751735108116.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
