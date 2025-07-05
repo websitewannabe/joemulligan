@@ -44,7 +44,7 @@ export default function Hero() {
               <span className="text-white">for Middletown!</span>
             </h1>
             
-            <p className="text-lg md:text-xl lg:text-2xl mb-8 text-shadow font-medium leading-relaxed max-w-[500px]">
+            <p className="hidden sm:block text-lg md:text-xl lg:text-2xl mb-8 text-shadow font-medium leading-relaxed max-w-[500px]">
               Small Business Owner • Attorney At Law • Community Leader • Fighter for Better Government
             </p>
             
