@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Heart, MapPin, Share2, Mail, Phone, MapPin as MapPinIcon, DollarSign } from "lucide-react";
 import joeVolunteerImg from "/assets/imgi_18_IMG_1628-1536x2048_1751732730505.jpg";
 
@@ -17,6 +18,7 @@ export default function ContactForm() {
     email: "",
     phone: "",
     message: "",
+    interest: "",
     wantYardSign: false,
     wantToVolunteer: false,
     wantToHostMeetGreet: false
@@ -38,6 +40,7 @@ export default function ContactForm() {
         email: "",
         phone: "",
         message: "",
+        interest: "",
         wantYardSign: false,
         wantToVolunteer: false,
         wantToHostMeetGreet: false
@@ -128,33 +131,18 @@ export default function ContactForm() {
                 </div>
                 
                 <div>
-                  <Label className="text-sm font-medium text-gray-700 mb-3 block">I'd like to:</Label>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <Checkbox
-                        id="yardSign"
-                        checked={formData.wantYardSign}
-                        onCheckedChange={(checked) => handleInputChange("wantYardSign", checked as boolean)}
-                      />
-                      <Label htmlFor="yardSign" className="text-sm">Request a yard sign</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox
-                        id="volunteer"
-                        checked={formData.wantToVolunteer}
-                        onCheckedChange={(checked) => handleInputChange("wantToVolunteer", checked as boolean)}
-                      />
-                      <Label htmlFor="volunteer" className="text-sm">Volunteer for the campaign</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox
-                        id="meetGreet"
-                        checked={formData.wantToHostMeetGreet}
-                        onCheckedChange={(checked) => handleInputChange("wantToHostMeetGreet", checked as boolean)}
-                      />
-                      <Label htmlFor="meetGreet" className="text-sm">Host a meet & greet</Label>
-                    </div>
-                  </div>
+                  <Label htmlFor="interest" className="text-sm font-medium text-gray-700">I'd like to:</Label>
+                  <Select value={formData.interest} onValueChange={(value) => handleInputChange("interest", value)}>
+                    <SelectTrigger className="mt-1">
+                      <SelectValue placeholder="Select how you'd like to help" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="yard-sign">Request a yard sign</SelectItem>
+                      <SelectItem value="volunteer">Volunteer for the campaign</SelectItem>
+                      <SelectItem value="meet-greet">Host a meet & greet</SelectItem>
+                      <SelectItem value="donate">Donate $</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
                 
                 <div>
