@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-campaign-blue/70"></div>
       
       {/* Content */}
-      <div className="relative z-10 w-full pt-20">
+      <div className="relative z-10 w-full pt-20 mt-[100px] sm:mt-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-white">
             {/* Main Hero Content - Left Justified */}
