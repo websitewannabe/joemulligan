@@ -79,7 +79,7 @@ export default function Navigation() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="bg-campaign-yellow text-campaign-blue hover:bg-yellow-300 hover:text-campaign-blue"
             >
-              {isMenuOpen ? <X size={51} /> : <Menu size={51} />}
+              {isMenuOpen ? <X size={72} /> : <Menu size={72} />}
             </Button>
           </div>
         </div>
