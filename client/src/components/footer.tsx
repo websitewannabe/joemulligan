@@ -85,7 +85,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm">
             <a href="#" className="hover:text-campaign-yellow transition-colors">Privacy Policy</a>
             <span>•</span>
-            <a href="#" className="hover:text-campaign-yellow transition-colors">Accessibility Statement</a>
+            <a href="/accessibility-statement" className="hover:text-campaign-yellow transition-colors">Accessibility Statement</a>
             <span>•</span>
             <a href="#" className="hover:text-campaign-yellow transition-colors">Sitemap</a>
           </div>
