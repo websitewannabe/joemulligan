@@ -22,7 +22,7 @@ export default function About() {
               alt="Joe Mulligan Professional Business Photo"
               className="w-full rounded-2xl"
             />
-            <div className="absolute -bottom-6 -right-6 bg-campaign-yellow p-6 rounded-xl shadow-xl transform rotate-3">
+            <div className="absolute -bottom-6 -right-6 bg-campaign-yellow p-6 rounded-xl shadow-xl transform rotate-3 shake-animation">
               <div className="text-campaign-blue font-bold text-center">
                 <div className="text-3xl">25+</div>
                 <div className="text-lg">Years Experience</div>
